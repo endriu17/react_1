@@ -1,25 +1,25 @@
 var movies = [{
         id: 1,
-        title: 'The God Doctor',
-        desc: 'serial o wybitnym lekarzu',
+        title: 'The Good Doctor',
+        desc: 'Series about an good doctor',
         src:  './images/tgd.jpg'
     },
     {
         id: 2,
         title: 'Better call Saul',
-        desc: 'serial o ciekawym prawniku',
+        desc: 'Series about an interesting lawyer',
         src: './images/bcs.jpg'
     },
     {
         id: 3,
         title: 'Friends',
-        desc: 'serial o grupie przyjaciół',
+        desc: 'you know...',
         src: './images/fr.jpg'
     },
     {
         id: 4,
         title: 'The Big Bang Theory',
-        desc: 'Serial o grupie przyjaciół naukowców',
+        desc: 'Series about a group of scientists friends',
         src: './images/tbbt.jpg'
     }
 ];
@@ -36,7 +36,7 @@ var moviesElements = movies.map(function (movie) {
 
 var element =
     React.createElement('div', {},
-        React.createElement('h1', {}, 'Lista filmów'),
+        React.createElement('h1', {}, 'List of films'),
         React.createElement('ul', {}, moviesElements),
 
     );
